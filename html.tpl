@@ -106,9 +106,6 @@
         <td>{{ escapeXML .FixedVersion }}</td>
         <td class="links" data-more-links="off">
           <a href={{ escapeXML .PrimaryURL | printf "%q" }}>{{ escapeXML .PrimaryURL }}</a>
-          {{- range .Vulnerability.References }}
-          <a href={{ escapeXML . | printf "%q" }}>{{ escapeXML . }}</a>
-          {{- end }}
         </td>
       </tr>
         {{- end }}
